@@ -8,6 +8,24 @@ FirstBlog::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+# get 'posts' => 'posts#index'
+# get 'posts/new' => 'posts#new'
+# get 'post/:id' => 'posts#show'
+# post 'posts' => 'posts#create'
+
+  resources :posts
+
+
+  # In sinatra
+
+  # get 'post/:id' do
+  #   @post = Post.find(params[:id])
+  #   erb :post_show
+  # end
+
+
+
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
